@@ -44,13 +44,13 @@
                 <a class="nav-link " href="index.html">Seletor de Cor</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contador</a>
+                <a class="nav-link" href="contador.html">Contador</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="cronometro.html">Cronômetro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="todo-list.html">To-do List</a>
+                <a class="nav-link active" aria-current="page" href="#">To-do List</a>
               </li>
             </ul>
           </div>
@@ -68,31 +68,35 @@
         <!-- jumbotron -->
         <div class="p-5 mb-4 bg-body-tertiary rounded-3">
           <div class="container-fluid py-5 ">
-            <h1 class="display-5 fw-bold">Contador</h1>
+            <h1 class="display-5 fw-bold">To-do List</h1>
             <p class="col-md-8 fs-4">
-              Utilize os botões abaixo para executar uma contagem.
+              Organize-se com nossa super ferramenta de produtividade.
             </p>
           </div>
         </div>
 
-        <output class="d-block text-center display-2 my-2">0</output>
-        <div class="d-grid d-md-flex justify-content-md-center gap-1 mx-2">
-          <button id="btnMais" type="button" class="btn btn-success order-1 order-md-2"><i
-              class="bi bi-plus-circle-fill"></i>
-            1</button>
-          <button id="btnMenos" type="button" class="btn btn-danger order-2 order-md-1"><i
-              class="bi bi-dash-circle-fill"></i>
-            1</button>
+        <!--layout todo-list-->
+        <div class="container" id="tarefas">
+          <div class="row my-2">
+            <div class="col text-center">
+              <button id="btnMais" type="button" class="btn btn-success"><i
+                  class="bi bi-plus-circle-fill me-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
         </div>
-      </main>
     </div>
-    <footer class="p-2 bg-secondary-subtle text-center opacity-50 fst-italic">
-      Copyright &copy; 2026 Everton Ferreira dos Santos.
-    </footer>
+
+    </main>
+  </div>
+  <footer class="p-2 bg-secondary-subtle text-center opacity-50 fst-italic">
+    Copyright &copy; 2026 Everton Ferreira dos Santos.
+  </footer>
   </div>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/contador.js"></script>
+  <script src="js/todo-list.js"></script>
 </body>
 
 </html>
